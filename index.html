@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer | Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero_section">
+      <div class="text_container">
+      </div>
+    </section>
+    <section class="black_box">
+      <h2><span>FULL STACK DEVELOPER</span></h2>
+    </section>
+    <section class="work">
+      <div class="grid_item">
+        <div class="card">
+          <div class="image_container">
+            <img src="imgs/lending1.jpg" alt="web development" />
+          </div>
+          <div class="card_content">
+            <h3>Web Development</h3>
+            <p>
+              Involves building and maintaining websites, focusing on front-end design and back-end functionality. Ensures a seamless, responsive, and engaging user experience.
+            </p>
+            <div class="full_description">
+              <p>Web development involves a wide range of tasks including web design, web content development, client-side/server-side scripting, and network security configuration. It ensures that websites are functional, easy to navigate, and visually appealing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="card">
+          <div class="image_container">
+            <img src="imgs/lending 3.jpg" alt="app development" />
+          </div>
+          <div class="card_content">
+            <h3>App Development</h3>
+            <p>
+              Focuses on creating and optimizing mobile and desktop applications. Ensures apps are user-friendly, functional, and meet specific user needs.
+            </p>
+            <div class="full_description">
+              <p>App development includes creating software applications for mobile devices and desktops. It involves various stages including design, development, testing, and deployment, ensuring the apps meet user requirements and provide a smooth experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_item">
+        <div class="card">
+          <div class="image_container">
+            <img src="imgs/lending4.png" alt="UI UX Design" />
+          </div>
+          <div class="card_content">
+            <h3>UI UX Design</h3>
+            <p>
+              Enhances the user experience through intuitive and aesthetically pleasing design. Combines visual elements with usability principles to create engaging interfaces.
+            </p>
+            <div class="full_description">
+              <p>UI/UX design is about enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product. It involves understanding user needs and designing intuitive and attractive interfaces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bottom_section" id="contact">
+      <div class="contact">
+        <h2><u>Contact Me</u></h2>
+        <p>If you have any questions or want to work together on a project, feel free to reach out to me. I'm always open to new opportunities and collaborations.</p>
+        <p>Email: <a href="mailto:snehajp@gmail.com">snehajp@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567810">123-456-7810</a></p>
+      </div>
+      <div class="about" id="about">
+        <h2><u>About Me</u></h2>
+        <p>My name is Sneha Pithadiya, and I am a passionate web developer specializing in creating responsive and dynamic websites. I have a strong background in full-stack development, and I enjoy using my skills to bring innovative ideas to life.</p>
+        <p>I am experienced in various web technologies including HTML, CSS, JavaScript, and backend frameworks. My goal is to build user-friendly and visually appealing websites that provide excellent user experiences.</p>
+      </div>
+    </section>
+    <footer>
+      PROJECT DEVELOPED BY SNEHA
+      <div id="thank_you_message" class="thank_you_message">Thank you for visiting!</div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+  
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const fullDescription = card.querySelector('.full_description');
+        fullDescription.classList.toggle('visible');
+      });
+    });
+  
+    const footer = document.querySelector('footer');
+    const thankYouMessage = document.getElementById('thank_you_message');
+  
+    footer.addEventListener('mouseover', () => {
+      thankYouMessage.classList.add('show');
+    });
+  
+    footer.addEventListener('mouseout', () => {
+      thankYouMessage.classList.remove('show');
+    });
+  });
+  
+    </script>
+  </body>
+</html>
